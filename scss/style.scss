@@ -1,0 +1,87 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+$fw:600;
+
+body {
+    background-color: #F6F6F6;
+    font-family: "Rubik", serif;
+    color: #0B132A;
+    font-size: 16px;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+._container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.header {
+
+}
+.header__container {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+}
+.header__logo {
+    display: flex;
+    font-size: 18px;
+    margin: 0 157px 0 0;
+}
+.header__logo-img {
+    
+}
+.header__logo-link {
+    margin: 10px 0 0 10px;
+    font-weight: $fw;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+}
+.menu-item > a {
+    margin: 0 40px 0 0;
+    color: #4F5665;
+}
+.menu-item:last-child {
+    margin: 0 150px 0 0;
+}
+.menu__link {
+    
+}
+.header__login {
+    display: flex;
+}
+.header__login > a:last-child{
+    color: #F53855;
+}
+.login {
+    display: flex;
+}
+.login__sign-in {
+    margin: 0 30px 0 0;
+    background-color: #F6F6F6;
+    font-weight: $fw;
+}
+.login__sign-up {
+    padding: 10px 40px 10px 40px;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    color: #F53855;
+    background-color: #F6F6F6;
+    font-weight: $fw;
+        &:hover {
+            background-color: #F53855;
+            color: #fff;
+        }
+}
+
+
+/* -----------header----------------------------------------------------------*/ 
+
+
