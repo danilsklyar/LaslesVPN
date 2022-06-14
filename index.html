@@ -1,45 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LaslesVPN</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__container _container">
-                    <div class="header__logo">
-                        <img class="header__logo-img" src="./img/Vector.svg" alt="">
-                        <a class="header__logo-link" href="#">LaslesVPN</a>
-                    </div>
-                    <nav class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu-item">
-                                <a class="menu__link" href="#">About</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu__link" href="#">Features</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu__link" href="#">Pricing</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu__link" href="#">Testimonials</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu__link" href="#">Help</a>
-                            </li>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaslesVPN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="./img/svg/Vector.svg" alt="logo">
+                    <a class="header__logo-link" href="#">Lasles<b>VPN</b></a>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu-item">
+                            <a class="menu__link" href="#">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu__link" href="#">Features</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu__link" href="#">Pricing</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu__link" href="#">Testimonials</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu__link" href="#">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__login login">
+                    <button class="login__sign-in">Sign-in</button>
+                    <button class="login__sign-up">Sign-up</button>
+                </div>
+            </div>
+        </header>
+        <main class="main _container">
+            <div class="about">
+                <div class="about__content">
+                    <h1 class="about__title">Want anything to be easy with <b>LaslesVPN.</b></h1>
+                    <p class="about__subtitle">Provide a network for all your needs with ease and fun using <span>LaslesVPN</span>
+                        discover interesting features from us.</p>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="about__btn">Get Started</button></a>
+                </div>
+                <div class="about__img">
+                    <img class="about__img-item" src="./img/Illustration 1.png" alt="Illustration 1">
+                </div>
+            </div>
+            <div class="advantages">
+                <div class="advantages__info">
+                    <img class="advantages__img" src="./img/svg/user.svg" alt="Users">
+                    <div class="advantages__item"><span>90+</span> <br> Users</div>
+                </div>
+                <div class="advantages__info">
+                    <img class="advantages__img" src="./img/svg/location.svg" alt="Locations">
+                    <div class="advantages__item"><span>30+</span> <br> Locations</div>
+                </div>
+                <div class="advantages__info">
+                    <img class="advantages__img" src="./img/svg/Server.svg" alt="Servers">
+                    <div class="advantages__item"><span>50+</span> <br> Servers</div>
+                </div>
+            </div>
+            <div class="provide">
+                <div class="provide__img">
+                    <img class="provide__img-item" src="./img/Illustration 2.png" alt="Illustration 2">
+                </div>
+                <div class="provide__content">
+                    <h2 class="provide__title title">We Provide Many Features You Can Use</h2>
+                    <p class="provide__subtitle subtitle">You can explore the features that we provide with fun and have their own functions each feature.</p>
+                    <ul class="provide__list">
+                        <li class="provide__list-item">Powerfull online protection.</li>
+                        <li class="provide__list-item">Internet without borders.</li>
+                        <li class="provide__list-item">Supercharged VPN</li>
+                        <li class="provide__list-item">No specific time limits.</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="choose">
+                <h2 class="choose__title title">Choose Your Plan</h2>
+                <p class="choose__subtitle subtitle">Let's choose the package that is best for you and explore it happily and <br> cheerfully.</p>
+                <div class="choose__card">
+                    <div class="choose__card-item">
+                        <img class="choose__card-box" src="./img/Free.png" alt="free-box">
+                        <h3 class="choose__card-title">Free Plan</h3>
+                        <ul class="choose__card-list">
+                            <li class="choose__card-list_item">Unlimited Bandwitch</li>
+                            <li class="choose__card-list_item">Encrypted Connection</li>
+                            <li class="choose__card-list_item">No Traffic Logs</li>
+                            <li class="choose__card-list_item">Works on All Devices</li>
                         </ul>
-                    </nav>
-                    <div class="header__login login">
-                        <button class="login__sign-in" href="#">Sign-in</button>
-                        <button class="login__sign-up" href="#">Sign-up</button>
+                        <p class="choose__card-price">Free</p>
+                        <button id="card-btn" class="choose__card-btn">Select</button>
+                    </div>
+                    <div class="choose__card-item">
+                        <img class="choose__card-box" src="./img/Standard.png" alt="Standard-box">
+                        <h3 class="choose__card-title">Standard Plan</h3>
+                        <ul class="choose__card-list">
+                            <li class="choose__card-list_item">Unlimited Bandwitch</li>
+                            <li class="choose__card-list_item">Encrypted Connection</li>
+                            <li class="choose__card-list_item">Yes Traffic Logs</li>
+                            <li class="choose__card-list_item">Works on All Devices</li>
+                            <li class="choose__card-list_item">Connect Anyware</li>
+                        </ul>
+                        <p class="choose__card-price">$9 <span>/ mo</span></p>
+                        <button id="card-btn" class="choose__card-btn">Select</button>
+                    </div>
+                    <div class="choose__card-item">
+                        <img class="choose__card-box" src="./img/Premium.png" alt="Premium-box">
+                        <h3 class="choose__card-title">Premium Plan</h3>
+                        <ul class="choose__card-list">
+                            <li class="choose__card-list_item">Unlimited Bandwitch</li>
+                            <li class="choose__card-list_item">Encrypted Connection</li>
+                            <li class="choose__card-list_item">Yes Traffic Logs</li>
+                            <li class="choose__card-list_item">Works on All Devices</li>
+                            <li class="choose__card-list_item">Connect Anyware</li>
+                            <li class="choose__card-list_item">Get New Features</li>
+                        </ul>
+                            <p class="choose__card-price">$12 <span>/ mo</span></p>
+                            <button id="card-btn" class="choose__card-btn">Select</button>
                     </div>
                 </div>
-            </header>
-        </div>
-    </body>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
 </html>

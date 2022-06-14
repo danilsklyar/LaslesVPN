@@ -1,87 +1,347 @@
 @import "nullstyle.scss";
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
-$fw:600;
 
 body {
-    background-color: #F6F6F6;
     font-family: "Rubik", serif;
     color: #0B132A;
     font-size: 16px;
+    background-color: #F6F6F6;
 }
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;
 }
+
 ._container {
     max-width: 1140px;
     margin: 0 auto;
 }
-.header {
 
+.title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
 }
+
+.subtitle {
+    color: #4F5665;
+    line-height: 30px;
+}
+
+/*-------------Header-------------------------------------------------------------*/
+
+.header {
+    margin-bottom: 120px
+}
+
 .header__container {
     display: flex;
     min-height: 100px;
     align-items: center;
 }
+
 .header__logo {
     display: flex;
     font-size: 18px;
     margin: 0 157px 0 0;
 }
-.header__logo-img {
-    
+
+.header__logo-img:hover {
+    cursor: pointer;
 }
+
 .header__logo-link {
     margin: 10px 0 0 10px;
-    font-weight: $fw;
+    font-weight: 500;
 }
-.header__menu {
-}
-.menu {
-}
+
+.header__menu {}
+
+.menu {}
+
 .menu__list {
     display: flex;
 }
-.menu-item > a {
+
+.menu-item>a {
     margin: 0 40px 0 0;
     color: #4F5665;
+
+    &:hover {
+        border-bottom: 1px solid #4F5665;
+    }
 }
+
 .menu-item:last-child {
     margin: 0 150px 0 0;
 }
-.menu__link {
-    
-}
+
+.menu__link {}
+
 .header__login {
     display: flex;
 }
-.header__login > a:last-child{
+
+.header__login>a:last-child {
     color: #F53855;
 }
+
 .login {
     display: flex;
 }
+
 .login__sign-in {
     margin: 0 30px 0 0;
     background-color: #F6F6F6;
-    font-weight: $fw;
+    font-weight: 500;
 }
+
 .login__sign-up {
-    padding: 10px 40px 10px 40px;
+    padding: 10px 30px 10px 30px;
     border: 1px solid #F53855;
     border-radius: 50px;
     color: #F53855;
     background-color: #F6F6F6;
-    font-weight: $fw;
-        &:hover {
-            background-color: #F53855;
-            color: #fff;
-        }
+    font-weight: 500;
+
+    &:hover {
+        background-color: #F53855;
+        color: #fff;
+    }
 }
 
 
-/* -----------header----------------------------------------------------------*/ 
+/* -----------header----------------------------------------------------------*/
 
 
+.main {}
+
+.about {
+    display: flex;
+    margin: 0 0 102px 0;
+}
+
+.about__content {
+    margin: 0 40px 0 0;
+}
+
+.about__title {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 500;
+    width: 555px;
+    margin: 0 0 20px 0;
+}
+
+.about__subtitle {
+    color: #4F5665;
+    width: 555px;
+    margin: 0 0 50px 0;
+    line-height: 30px;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.about__btn {
+    background: #F53838;
+    border-radius: 10px;
+    color: #fff;
+    width: 250px;
+    height: 60px;
+    font-weight: 700;
+    box-shadow: 0 20px 50px -15px red;
+
+    &:hover {
+        background-color: #f9405c;
+    }
+}
+
+.about__img {}
+
+.advantages {
+    padding: 37px 90px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px -30px #afafaf;
+    margin: 0 0 150px 0;
+}
+
+.advantages__info {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    border-right: 2px solid #EEEFF2;
+    height: 120px;
+
+    &:last-child {
+        border: 0;
+        padding-right: 20px;
+    }
+}
+
+.advantages__img {
+    margin: 0 36px 0 0;
+}
+
+.advantages__item {
+    font-size: 20px;
+    color: #4F5665;
+
+    span {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 35px;
+        color: #0B132A;
+    }
+}
+
+
+.provide {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 212px 0;
+}
+
+.provide__img {
+    position: relative;
+    top: -92px;
+    margin: 0 170px 0 0;
+}
+
+.provide__img-item {}
+
+.provide__content {
+    width: 430px;
+}
+
+.provide__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+}
+
+.provide__subtitle {
+    margin: 0 0 20px 0;
+}
+
+.provide__list {
+    position: relative;
+    color: #4F5665;
+}
+
+.provide__list-item {
+    margin: 0 0 20px 0;
+    padding-left: 30px;
+    line-height: 22px;
+    font-size: 14px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &::before {
+        content: url(../img/svg/checked.svg);
+        position: absolute;
+        left: 0px;
+    }
+}
+
+/*-------------------Article ------------------------------------------------------*/
+
+.choose {
+    text-align: center;
+}
+
+.choose__title {
+    margin: 0 0 20px 0;
+}
+
+.choose__subtitle {
+    margin: 0 0 60px 0;
+}
+
+.choose__card {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.choose__card-item {
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 80px 80px 0px 80px;
+    background-color: #fff;
+}
+
+.choose__card-box {
+    margin: 0 0 30px;
+}
+
+.choose__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0B132A;
+    margin: 0 0 30px 0;
+}
+
+.choose__card-list {
+    position: relative;
+    color: #4F5665;
+    font-size: 14px;
+    line-height: 35px;
+    margin: 0 0 30px 0;
+}
+
+.choose__card-list_item {
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+    &::before {
+        content: url(../img/svg/checked-plan.svg);
+        position: absolute;
+        left: -20px;
+    }
+}
+
+
+.choose__card-price {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+
+    span {
+        color: #4F5665;
+        font-weight: 400px;
+    }
+}
+
+.choose__card-btn {
+    padding: 10px 60px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #F53838;
+    border: 2px solid #F53838;
+    border-radius: 50px;
+    background-color: #fff;
+
+    &:hover {
+        background-color: #F53855;
+        color: #fff;
+        box-shadow: 0px 10px 30px -10px #e60909;
+    }
+}
+
+.card-active {
+    box-shadow: 0px 10px 30px -10px #e60909;
+    border: 2px solid #F53838;
+    border-radius: 10px;
+}
