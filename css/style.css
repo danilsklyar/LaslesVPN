@@ -329,9 +329,10 @@ body {
   left: 0px;
 }
 
-/*-------------------Article ------------------------------------------------------*/
+/*-------------------Choose your plan ------------------------------------------------------*/
 .choose {
   text-align: center;
+  margin: 0 0 150px 0;
 }
 
 .choose__title {
@@ -420,4 +421,172 @@ body {
           box-shadow: 0px 10px 30px -10px #e60909;
   border: 2px solid #F53838;
   border-radius: 10px;
+}
+
+/*----------Huge global network--------------------------------------------------------*/
+.global {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.global__title {
+  margin: 0 0 20px 0;
+}
+
+.global__subtitle {
+  margin: 0 0 156px 0;
+}
+.global__subtitle span {
+  font-weight: 500;
+}
+
+.global__map {
+  margin: 0 0 45px 0;
+}
+
+/*-------------Comments-----------------------------------------*/
+.comments__title {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.comments__subtitle {
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.comments__carousel .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Активная точка */
+.comments__carousel .slick-dots li {
+  list-style: none;
+  margin: 50px 15px 0 0;
+}
+
+.comments__carousel .slick-dots li.slick-active button {
+  background-color: #F53838;
+}
+
+/* Элемент точки */
+.comments__carousel .slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #DDE0E4;
+  border-radius: 50px;
+}
+
+.comments__carousel {
+  position: relative;
+}
+
+.comments__carousel .slick-arrow {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  z-index: 10;
+  font-size: 0;
+  width: 20px;
+  height: 17px;
+}
+
+.comments__carousel .slick-arrow.slick-prev {
+  right: 7%;
+  background: url("../img/svg/ArrowBack.svg") 19px 19px no-repeat;
+  border: 2px solid #F53838;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.comments__carousel .slick-arrow.slick-next {
+  background: url("../img/svg/ArrowTo.svg") 20px 20px no-repeat;
+  background-color: #F53838;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.comments__carousel-item.slick-center {
+  background: #FFFFFF;
+  border: 2px solid #F53838;
+  border-radius: 10px;
+}
+
+.comments__carousel-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 0 0 50px 0;
+}
+
+.comments__carousel-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comments__carousel-people {
+  margin: 0 20px 20px 0;
+}
+
+.comments__carousel-about {
+  margin: 0 20px 0 0;
+}
+
+.comments__carousel-about_name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.comments__carousel-about_city {
+  font-size: 14px;
+  color: #4F5665;
+}
+
+.comments__carousel-stars {
+  line-height: 30px;
+}
+
+.comments__carousel-stars-item {
+  margin: 6px 0 0 10px;
+}
+
+.comments__carousel-main {
+  line-height: 30px;
 }
